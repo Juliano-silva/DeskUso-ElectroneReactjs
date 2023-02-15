@@ -5,14 +5,12 @@ export default function Header(){
         <div className={style.Header}>
         <h1>Header</h1>
         <Link to="/">Home</Link>
-        <Link to="/ApiInterna">ApiInterna</Link>
-        <Link to="/Animation">Animation</Link>
+        <Link to="/ApiInterna">Digipédia</Link>
+        <Link to="/ApiInternaP">Pokedex</Link>
         <Link to="/Iframe">Iframe</Link>
         <Link to="/Mural">Mural</Link>
         <Link to="/Random">Random</Link>
         <Link to="/RandomColor">Random Color</Link>
-        <Link to="/Roleta">Roleta</Link>
-        <Link to="/Instalar">Instalar</Link>
         <Link to="/Tempo">Tempo</Link>
         <Link to="/Cronometro">Cronometro</Link>
         <Link to="/Timer">Timer</Link>
