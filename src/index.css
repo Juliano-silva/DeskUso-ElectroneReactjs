@@ -1,9 +1,51 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+/* Dark Theme */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Dark theme */
+.dark{
+  background-image: url(./Arquivos/StarRain.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+  color: #fff;
 }
 body{
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  background-image: url(./Arquivos/ChuvaRain.gif);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+  color: black;
   height: 100vh;
+}
+#Corpo{
+  border: 0.1vh solid transparent;
+  width: 100%;
+  margin: auto;
+}
+#Loader{
+  animation: Bk 15s normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+@keyframes Bk {
+  0%{
+   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/b6e0b072897469.5bf6e79950d23.gif");
+   top: 0;
+   width: 100%;
+   height: 100%;
+  }
+  100%{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/b6e0b072897469.5bf6e79950d23.gif");
+  }
 }

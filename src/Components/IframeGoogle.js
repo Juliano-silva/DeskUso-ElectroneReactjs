@@ -7,9 +7,8 @@ function Carregar(){
 export default function Iframe(){
     return(
       <div className={style.Iframe}>
-        <input type="text" id="Pesquisar"/>
+        <input type="text" id="Pesquisar" placeholder='Search' /><button id='Enviar' onClick={Carregar}>Pesquisar</button>
         <iframe src='' id='Frame' frameborder="0" ></iframe>
-        <button id='Enviar' onClick={Carregar}>Carregar</button>
       </div>
       )
   }

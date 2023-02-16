@@ -1,6 +1,11 @@
 const {app,BrowserWindow,Notification} = require("electron");
 function createWindow(){
-    const win = new BrowserWindow({width:800,height:600,autoHideMenuBar:true});
+    const win = new BrowserWindow({
+      width:800,
+      height:600,
+      hiddenInMissionControl:true,
+      autoHideMenuBar:true
+    });
     win.loadURL("http://localhost:3000");
 }
 const NOTIFICATION_TITLE = 'Basic Notification'

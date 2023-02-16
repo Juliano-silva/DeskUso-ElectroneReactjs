@@ -13,8 +13,10 @@ import ApiInternaP from './Components/ApiInternaP'
 export default function App(){
   return(
     <Router>
+      <div id='Loader'></div>
       <Header/>
       <Switch>
+        <div id='Corpo'>
         <Route exact path="/"><Api/></Route>
         <Route path="/ApiInterna"><ApiInterna/></Route>
         <Route path="/Iframe"><Iframe/></Route>
@@ -25,6 +27,7 @@ export default function App(){
         <Route path="/Tempo"><Tempo/></Route>
         <Route path="/Cronometro"><Cronometro/></Route>
         <Route path="/Timer"><Timer/></Route>
+        </div>
       </Switch>
     </Router>
     )

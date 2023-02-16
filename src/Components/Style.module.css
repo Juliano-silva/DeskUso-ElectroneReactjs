@@ -1,7 +1,26 @@
+@font-face {
+    font-family: "Droidga";
+    src: url("../Arquivos/font/Droidiga.otf")format('opentype');
+    font-family: "Think";
+    src: url("../Arquivos/font/Think-Bold.ttf")format('truetype');
+}
 .Header{
-    border: 0.2vh solid black;
-    background: #111010;
     color: white;
+    text-align: center;
+    height: 9vh;
+    border: 0.2vh solid transparent;
+}
+.Header > h1{
+    margin-top: 0.7vh;
+    font-size: 7vh;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("https://media.tenor.com/McJ1cchywIIAAAAC/mob-psycho-mogami.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Droidga';
+    font-style: italic;
 }
 .Header > a{
     text-align: center;
@@ -10,14 +29,323 @@
     margin: auto;
     margin-left: 6vh;
 }
+.Button{
+    all: unset;
+    border: 1vh solid transparent;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-top: -2.5vh;
+}
+.ButtonF{
+    all: unset;
+    border: 1vh solid transparent;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Button > span,.ButtonF > span{
+    display: block;
+    width: 60%;
+    border: 0.3vh solid snow;
+    background: snow;
+    margin: auto;
+    margin-top: 1vh;
+}
+.Theme > button{
+    all: unset;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-right: 1.5vh;
+}
+.Theme > button > img{
+    display: block;
+    width: 6vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1vh;
+}
+/* Sidebar */
+.Sidebar{
+position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20vh;
+  background: #11101D;
+  padding: 1vh 2vh;
+  z-index: 99;
+  display: none;
+  word-wrap: break-word;
+}
+.Sidebar > a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2vh;
+}
+.Sidebar > button{
+    text-align: center;
+    font-size: 2vh;
+}
 /* Iframe */
 .Iframe{
     overflow: hidden;
 }
+.Iframe > input::placeholder{
+    color: snow;
+}
 .Iframe > input{
-    width: 100%;
+    all: unset;
+    width: 80%;
+    border: 0.4vh solid black;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+    color: snow;
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    background: cadetblue;
+    font-size: 4vh;
+}
+.Iframe > button{
+    all: unset;
+    margin: auto;
+    display: block;
+    border: 0.4vh solid black;
+    width: 10vh;
+    text-align: center;
+    cursor: pointer;
+    color: snow;
+    background: cadetblue;
+    border-radius: 2vh;
+    height: 5vh;
+    margin-top: 1vh;
+    font-size: 2vh;
+    transition: .5s;
+}
+.Iframe > button:hover{
+    filter: invert(1);
 }
 .Iframe > iframe{
     width: 100%;
-    height: 70vh;
+    height: 75vh;
+    margin-top: 0.6vh;
+}
+/* Api */
+.Container{
+}
+.List{
+    border: 0.5vh solid #252525;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    border-radius: 20vh;
+    margin-top: 2vh;
+    width: 80%;
+}
+.List > li > h1{
+    color: snow;
+    text-align: center;
+    font-size: 5vh;
+    word-wrap: break-word;
+    border: 2vh solid transparent;
+    width: 80%;
+    margin: auto;
+}
+.List > li > p{
+    font-size: 2.5vh;
+    text-align: left;
+    margin-left: 4vh;
+    border: 0.5vh solid transparent;
+    width: 85%;
+    word-wrap: break-word;
+    margin: auto;
+}
+.List > li > div{
+    border: 2vh solid transparent;
+    width: 40%;
+    margin: auto;
+}
+.List > li > div > button{
+    all: unset;
+    width: 20vh;
+    display: block;
+    border: 2vh solid transparent;
+    cursor: pointer;
+    font-size: 3vh;
+    display: inline-block;
+}
+.Inputs > input,.Inputs > textarea{
+    all: unset;
+    display: block;
+    margin: auto;
+    border: 0.4vh solid #252525;
+    width: 80%;
+    margin-top: 2vh;
+    border-radius: 0.7vh;
+}
+.Inputs > input{
+    text-align: center;
+}
+.Inputs > textarea{
+    height: 30vh;
+}
+.Inputs > textarea::-webkit-scrollbar{
+    width: 0px;
+}
+.Inputs > div {
+    border: 1vh solid transparent;
+    width: 20%;
+    margin: auto;
+    margin-top: 2vh;
+}
+.Inputs > div > button,.BotãoAparecer > button{
+    all: unset;
+    display: block;
+    text-align: center;
+    border: 0.6vh solid black;
+    border-radius: 20vh;
+    background: #11101D;
+    color: skyblue;
+    margin: auto;
+    width: 20vh;
+    font-size: 3vh;
+    margin-top: 0.6vh;
+    cursor: pointer;
+    transition: .5s;
+}
+.Inputs > div > button:hover,.BotãoAparecer > button:hover{
+    filter: invert(1);
+}
+.BotãoAparecer{
+    border: 1vh solid transparent;
+    width: 10%;
+    border: 2px solid transparent;
+    width: 100%;
+}
+.BotãoAparecer > button:nth-child(1){
+    margin: auto;
+    margin-top: 2vh;
+}
+.BotãoAparecer > button:nth-child(2){
+    position: fixed;
+    width: 4vh;
+}
+/* Timer */
+.Timer{
+    text-align: center;
+}
+.Timer > button{
+    all: unset;
+    text-align: center;
+    margin: auto;
+    border: 0.5vh solid #11101D;
+    font-size: 4vh;
+    border-radius: 2vh;
+    width: 20vh;
+    background: rgb(162, 91, 228);
+    color: aliceblue;
+    transition: .5s;
+    margin-top: 2vh;
+}
+.Timer > button:hover{
+    filter: invert(1);
+}
+.Timer > h1{
+    font-size: 40vh;
+    text-shadow: 1vh 1vh 1vh #c0b630;
+    font-family: 'Think';
+    font-weight: bold;
+    animation: Color 4s infinite;
+}
+@keyframes Color {
+    0%{
+        color: #2c7983;
+    }
+    25%{
+        color: #e9f3;
+    }
+    50%{
+        color: #fbf505;
+    }
+    75%{
+        color: #5327fe;
+    }
+    100%{
+        color: #b32b73;
+    }
+}
+/* Tempo */
+.InputTempo > input,.InputTempo > button{
+    all: unset;
+    display: block;
+    margin: auto;
+}
+.InputTempo > input::placeholder{
+    color: #9c95e7;
+}
+.InputTempo > input{
+    border: 0.4vh solid #2c7983;
+    width: 80%;
+    background: #11101D;
+    font-size: 3vh;
+    margin-top: 2vh;
+    text-align: center;
+    color: #9c95e7;
+    border-radius: 2vh;
+}
+.InputTempo > button{
+    border: 0.5vh solid #11101D;
+    background: #2c7983;
+    color: #ebeafc;
+    margin-top: 2vh;
+    border-radius: 4vh;
+    cursor: pointer;
+    width: 14vh;
+    text-align: center;
+    font-size: 4vh;
+}
+.DivTempo{
+    background: rgb(61, 59, 59);
+    width: 40%;
+    margin: auto;
+    margin-top: 2vh;
+    text-align: center;
+    font-family: 'Think';
+    border-radius: 2vh;
+    color: #ebeafc;
+    word-break: break-all;
+    animation: SoleLua 5s infinite;
+}
+.DivTempo > h1{
+    font-size: 20vh;
+    margin-top: 1vh;
+}
+.DivTempo > h2{
+    font-size: 10vh;
+    margin-top: -2vh;
+}
+.DivTempo > h3{
+    font-size: 5vh;
+}
+.DivTempo > h4{
+    font-size: 6vh;
+}
+@keyframes SoleLua {
+    0%{
+        border: 0.8vh solid #74A8E3;
+    }
+    50%{
+        border: 0.8vh solid #E34E0D;
+    }
+    100%{
+        border: 0.8vh solid #01131D;
+    }
 }
