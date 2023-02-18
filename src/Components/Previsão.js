@@ -21,7 +21,7 @@ export default function Tempo() {
   };
 
   return (
-    <div className="App">
+    <div className={style.Container}>
         <div className={style.InputTempo}>
           <input
             type="text"

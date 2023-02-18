@@ -13,8 +13,9 @@ input[type="checkbox"] {
   background-image: url(./Arquivos/StarRain.gif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(1vh);
   color: #fff;
 }
 body{
@@ -22,9 +23,13 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(20px);
-  color: black;
+  background-attachment: fixed;
+  backdrop-filter: blur(1vh);
+
   height: 100vh;
+}
+body::-webkit-scrollbar{
+  width: 0px;
 }
 #Corpo{
   border: 0.1vh solid transparent;
@@ -37,6 +42,7 @@ body{
   background-size: cover;
   background-position: center;
   position: absolute;
+  height: 120vh;
 }
 @keyframes Bk {
   0%{

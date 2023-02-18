@@ -6,9 +6,11 @@ function Carregar(){
 }
 export default function Iframe(){
     return(
+      <div className={style.Container}>
       <div className={style.Iframe}>
         <input type="text" id="Pesquisar" placeholder='Search' /><button id='Enviar' onClick={Carregar}>Pesquisar</button>
         <iframe src='' id='Frame' frameborder="0" ></iframe>
+      </div>
       </div>
       )
   }

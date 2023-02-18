@@ -44,7 +44,6 @@ export default function Header(){
             <span></span>
             </button>
         <Link to="/">Home</Link>
-        <Link to="/ApiInterna">Digipédia</Link>
         <Link to="/ApiInternaP">Pokedex</Link>
         <Link to="/Iframe">Iframe</Link>
         <Link to="/Mural">Mural</Link>

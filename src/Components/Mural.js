@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import {FaEdit,FaTrash} from 'react-icons/fa'
+import style from './Style.module.css'
 const Alert = ({type,msg,removeAlert,list}) => {
   useEffect(() => {
       const timeout = setTimeout(() => {
@@ -11,16 +12,16 @@ const Alert = ({type,msg,removeAlert,list}) => {
 }
 const List = ({items,removeItem,editItem}) => {
     return(
-        <div className="container">
+      <div>
+        <div  className={style.CorpoMural}>
             {items.map((item) => {
                 const {id,title,image} = item;
                 return(
-                    <ul key={id}>
+                    <ul key={id} className={style.MuralDv}>
                         <li>
-                            {/* Aqui fica o Titúlo */}
-                            {title}
+                           <h1>{title}</h1>
                             <img src={image} alt="" />
-                            <div style={{float:"right"}}>
+                            <div className={style.ButtonMural}>
                                 <button onClick={() => editItem(id)}>
                                     <FaEdit/>
                                 </button>
@@ -32,6 +33,7 @@ const List = ({items,removeItem,editItem}) => {
                     </ul>
                 )
             })}
+        </div>
         </div>
     )
 }
@@ -52,6 +54,12 @@ const Mural = () =>{
   const [alert,setAlert] = useState({show:false,msg:"",type:""});
   const [editId,setEditID] = useState(null);
   const [isEditing,setIdEditing] = useState(false);
+  function Esconder(){
+    document.getElementById("FORMural").style.display = "none"
+  }
+  function Aparecer(){
+    document.getElementById("FORMural").style.display = "block"
+  }
   useEffect(() => {
     localStorage.setItem("list",JSON.stringify(list));
   },[list]);
@@ -100,24 +108,28 @@ const Mural = () =>{
     setList([]);
   };
   return(
-    <div>
+    <div className={style.Container}>
       <section>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="FORMural">
           {alert.show && <Alert {...alert} removeAlert={ShowAlert} list={list}/>}
-          <div>
-            <input type="text" onChange={(e) => setName(e.target.value)} value={name} />
-            <input type="text" onChange={(e) => setImage(e.target.value)} value={image} />
+          <div className={style.ImageInput}>
+            <input type="text" onChange={(e) => setName(e.target.value)} value={name} placeholder="Nome da Imagem"/>
+            <input type="text" onChange={(e) => setImage(e.target.value)} value={image} placeholder="URL da Imagem"/>
             <button type="submit">
-              {isEditing ? "Edit" : "Submit"}
+              {isEditing ? "Editando" : "Enviar"}
             </button>
+            <button id="Esconder" onClick={Esconder}>Esconder</button>
           </div>
         </form>
+        <div className={style.BotãoAparecer}>
+        <button onClick={Aparecer}>Aparecer</button>
+        </div>
         {list.length > 0 && (
           <div>
             <List items={list} removeItem={removeItem} editItem={EditItem}/>
             <div>
-              <button onClick={clearList}>
-                Clear all item
+              <button onClick={clearList} className={style.RT}>
+                Remover Tudo
               </button>
             </div>
           </div>

@@ -4,6 +4,7 @@ import Dado3 from '../Arquivos/inverted-dice-3.png'
 import Dado4 from '../Arquivos/inverted-dice-4.png'
 import Dado5 from '../Arquivos/inverted-dice-5.png'
 import Dado6 from '../Arquivos/inverted-dice-6.png'
+import style from './Style.module.css'
 function random(tamanho){
   var Primeiro = "";
   var caracter = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!)_@#$%¨&abcdefghijklmnopqrstuvwxyz|"
@@ -27,16 +28,17 @@ function Dados(){
 }
 export default function Random(){
     return(
-      <div>
-        <h1>Random</h1>
-        <input type="number" name="" id="InputNu" max="600"/>
+      <div className={style.Container}>
+      <div className={style.RAndom}>
+        <input type="number" name="" id="InputNu" max="100"/>
         <h1 id="Senha">
         </h1>
-        <button onClick={Dados}>Jogar dados</button>
         <button onClick={Gerar}>Gerar</button>
+        <button onClick={Dados}>Jogar dados</button>
         <div id="Dados">
-          <img id="Dado" alt="" />
+          <img className={style.Dados} id="Dado" alt="" />
         </div>
+      </div>
       </div>
       )
   }

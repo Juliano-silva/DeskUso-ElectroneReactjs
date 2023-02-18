@@ -12,7 +12,7 @@ const Alert = ({type,msg,removeAlert,list}) => {
 }
 const List = ({items,removeItem,editItem}) => {
     return(
-        <div className={style.Container}>
+        <div>
             {items.map((item) => {
                 const {id,title,texto} = item;
                 return(
@@ -101,7 +101,7 @@ const Api = () =>{
     setTexto(EditItem.texto);
   };
   return(
-    <div>
+    <div className={style.Container}>
       <section>
         <form onSubmit={handleSubmit} id="FORM">
           {alert.show && <Alert {...alert} removeAlert={ShowAlert} list={list}/>}

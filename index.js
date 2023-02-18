@@ -4,14 +4,18 @@ function createWindow(){
       width:800,
       height:600,
       hiddenInMissionControl:true,
-      autoHideMenuBar:true
+      autoHideMenuBar:true,
+      title:"DeskUP"
     });
-    win.loadURL("http://localhost:3000");
+    win.loadURL("https://www.youtube.com/watch?v=HQcCpmz7KqM&ab_channel=shooter_sz");
 }
-const NOTIFICATION_TITLE = 'Basic Notification'
-const NOTIFICATION_BODY = 'Notification from the Main process'
+const NOTIFICATION_TITLE = 'Bem-Vindo ao DeskUP'
+const NOTIFICATION_BODY = 'Aqui é um Aplicativo onde tem tudo e mais um pouco'
+if (process.platform === 'win32') {
+   app.setAppUserModelId("JSA");
+  }
 function showNotification () {
-    new Notification({ title: NOTIFICATION_TITLE, body: NOTIFICATION_BODY }).show()
+    new Notification({title: NOTIFICATION_TITLE,body: NOTIFICATION_BODY}).show()
   }
 app.whenReady().then(createWindow).then(showNotification)
 

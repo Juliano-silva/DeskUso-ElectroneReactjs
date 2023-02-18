@@ -1,6 +1,5 @@
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Api from './Components/Api'
-import ApiInterna from './Components/ApiInterna'
 import Header from './Components/Header'
 import Iframe from './Components/IframeGoogle'
 import Mural from './Components/Mural'
@@ -18,7 +17,6 @@ export default function App(){
       <Switch>
         <div id='Corpo'>
         <Route exact path="/"><Api/></Route>
-        <Route path="/ApiInterna"><ApiInterna/></Route>
         <Route path="/Iframe"><Iframe/></Route>
         <Route path="/Mural"><Mural/></Route>
         <Route path="/ApiInternaP"><ApiInternaP/></Route>

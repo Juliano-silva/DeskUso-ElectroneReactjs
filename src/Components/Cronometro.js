@@ -1,3 +1,4 @@
+import style from './Style.module.css'
 var seg = 0;
 var min = 0;
 var hor = 0;
@@ -23,12 +24,13 @@ function Timer(){
 }
 export default function Cronometro(){
     return(
-        <div>
-            <h1>Cronometro</h1>
+        <div className={style.Container}>
+        <div className={style.Cronometro}>
             <button onClick={Start}>Começar</button>
             <button onClick={Pause}>Pause</button>
-            <button onClick={Sair}>Sair</button>
+            <button onClick={Sair}>Recomeçar</button>
             <div id="counter">00:00:00</div>
+        </div>
         </div>
         )
     }

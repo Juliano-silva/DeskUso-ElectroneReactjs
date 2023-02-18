@@ -1,4 +1,4 @@
-
+import style from './Style.module.css'
 function random(tamanho){
   var Primeiro = "#";
   var caracter = "0123456789"
@@ -9,20 +9,23 @@ function random(tamanho){
 }
 function Cor(){
   document.getElementById("Color").style.background = random(5)
-  document.getElementById("Color").innerText = random(5)
+  document.getElementById("H1").innerText = random(5)
 }
 function Random(){
   document.getElementById("Gradient").style.background =(`linear-gradient(${random(5)},${random(5)},${random(5)}`)
-  document.getElementById("Gradient").innerText = `${random(5)},${random(5)},${random(5)}`
+  document.getElementById("H12").innerText = `${random(5)},${random(5)},${random(5)}`
 }
 export default function RandomColor(){
     return(
-      <div>
-        <h1>RandomColor</h1>
-        <div id="Color"></div>
-        <div id="Gradient"></div>
-        <button onClick={Cor}>Random Color</button>
-        <button onClick={Random}>Random Gradient</button>
+      <div className={style.Container}>
+        <button className={style.ColorButton} onClick={Cor}>Random Color</button>
+        <div className={style.Color} id="Color">
+          <h1 id='H1'></h1>
+        </div>
+        <button className={style.ColorButton} onClick={Random}>Random Gradient</button>
+        <div className={style.Color} id="Gradient">
+        <h1 id='H12'></h1>
+        </div>
       </div>
       )
   }
