@@ -1,7 +1,8 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "private": false,
+  "homepage": "./",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "electron": "^23.0.0",
     "electron-packager": "^17.1.1",
     "file-saver": "^2.0.5",
+    "gerador-nome": "^0.0.5",
     "html-to-image": "^1.11.11",
     "js-file-download": "^0.4.12",
     "react": "^18.2.0",

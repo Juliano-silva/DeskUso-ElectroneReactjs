@@ -7,7 +7,7 @@ function createWindow(){
       autoHideMenuBar:true,
       title:"DeskUP"
     });
-    win.loadURL("https://www.youtube.com/watch?v=HQcCpmz7KqM&ab_channel=shooter_sz");
+    win.loadURL("https://juliano-silva.github.io/DeskUP/");
 }
 const NOTIFICATION_TITLE = 'Bem-Vindo ao DeskUP'
 const NOTIFICATION_BODY = 'Aqui é um Aplicativo onde tem tudo e mais um pouco'

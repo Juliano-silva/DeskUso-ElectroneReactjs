@@ -88,8 +88,8 @@ input::-webkit-inner-spin-button {
 position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 30vh;
+  height: 105vh;
+  width: 40vh;
   background-image: url("../Arquivos/Celular.jpg");
   background-position: center;
   background-size: cover;
@@ -98,7 +98,7 @@ position: fixed;
   word-wrap: break-word;
 }
 .Sidebar > a{
-    color: white;
+    color: rgb(182, 14, 182);
     text-decoration: none;
     display: block;
     font-size: 4vh;
@@ -632,4 +632,65 @@ position: fixed;
     width: 80%;
     margin: auto;
     margin-top: -2.5vh;
+}
+/* Reverse Texto */
+.ReverseT{
+    border: 0.7vh solid snow;
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+    border-radius: 10vh;
+    background: #110c3f;
+    height: 60vh;
+}
+.ReverseT > input::placeholder{
+    color: cornsilk;
+}
+.ReverseT > input{
+    all: unset;
+    width: 80%;
+    border: 0.3vh solid whitesmoke;
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    background-color: #160a81;
+    text-align: center;
+    font-size: 4vh;
+    color: cornsilk;
+}
+.ReverseT > button{
+    all: unset;
+    display: block;
+    border: 0.3vh solid whitesmoke;
+    background-color: rgb(21, 66, 124);
+    color: #28c8dd;
+    width: 20vh;
+    text-align: center;
+    margin: auto;
+    border-radius: 2vh;
+    margin-top: 10vh;
+    cursor: pointer;
+    font-size: 3vh;
+    transition: .5s;
+}
+.ReverseT > button:hover{
+    filter: invert(1);
+}
+.ReverseT > h3{
+    color: rgb(167, 184, 22);
+    text-shadow: 0.2vh 0.2vh 0.2vh black ;
+    text-align: center;
+    border: 0.5vh solid whitesmoke;
+    overflow: auto;
+    word-wrap: break-word;
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+    height: 10vh;
+    font-size: 7vh;
+    border-radius: 1vh;
+}
+.ReverseT > h3::-webkit-scrollbar{
+    width: 0px;
 }

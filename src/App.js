@@ -9,6 +9,15 @@ import Tempo from './Components/Previsão'
 import Cronometro from './Components/Cronometro'
 import Timer from './Components/Timer'
 import ApiInternaP from './Components/ApiInternaP'
+import Animation from './Components/Animation'
+import Digipédia from './Components/Digipédia'
+import Email from './Components/Email'
+import GeradorNome from './Components/GeradorNome'
+import ImageDownload from './Components/ImageDownload'
+import Piano from './Components/Piano'
+import Portfolio from './Components/Portfolio'
+import QRcode from './Components/QRcode'
+import ReverseLetra from './Components/ReverseLetra'
 export default function App(){
   return(
     <Router>
@@ -25,6 +34,15 @@ export default function App(){
         <Route path="/Tempo"><Tempo/></Route>
         <Route path="/Cronometro"><Cronometro/></Route>
         <Route path="/Timer"><Timer/></Route>
+        <Route path="/Piano"><Piano/></Route>
+        <Route path="/GeradorNome"><GeradorNome/></Route>
+        <Route path="/Animation"><Animation/></Route>
+        <Route path="/QRcode"><QRcode/></Route>
+        <Route path="/Email"><Email/></Route>
+        <Route path="/Reverse"><ReverseLetra/></Route>
+        <Route path="/Digipedia"><Digipédia/></Route>
+        <Route path="/ImageDownload"><ImageDownload/></Route>
+        <Route path="/Portfolio"><Portfolio/></Route>
         </div>
       </Switch>
     </Router>
