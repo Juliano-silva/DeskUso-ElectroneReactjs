@@ -52,15 +52,12 @@ export default function Header(){
         <Link to="/Tempo">Tempo</Link>
         <Link to="/Cronometro">Cronometro</Link>
         <Link to="/Timer">Timer</Link>
-        <Link to="/Piano">Piano</Link>
         <Link to="/GeradorNome">Gerador Nome e Frase</Link>
         <Link to="/Animation">Animation</Link>
         <Link to="/QRcode">QRcode</Link>
         <Link to="/Email">Email</Link>
         <Link to="/Reverse">Reverse</Link>
-        <Link to="/Digipedia">Digipedia</Link>
-        <Link to="/ImageDownload">Image Download</Link>
-        <Link to="/Portfolio">Portfolio</Link>
+        <Link to="/Register">Register</Link>
         </div>
         </div>
         )

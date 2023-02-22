@@ -1,7 +1,9 @@
+import style from './Style.module.css'
 export default function Animation(){
     return(
         <div>
-            <h1>Animation</h1>
+            <div className={style.Galaxy}>
+            </div>
         </div>
         )
 }

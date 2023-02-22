@@ -694,3 +694,74 @@ position: fixed;
 .ReverseT > h3::-webkit-scrollbar{
     width: 0px;
 }
+/* Animation */
+.Galaxy{
+    display: block;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 70vh;
+    height: 70vh;
+    animation: AnimationGIf 14s ease-in-out infinite ;
+    margin-top: 10vh;
+    border-radius: 50vh;
+}
+@keyframes AnimationGIf {
+    0%{
+        background-image: url("https://media.tenor.com/xfsFj7A6lJMAAAAd/galaxy.gif");
+        transform: rotate(0deg);
+        border: 0.6vh solid purple;
+    }
+    10%{
+        background-image: url("https://i.pinimg.com/originals/d2/c2/58/d2c258321507ba683c80747d8888e322.gif");
+        transform: rotate(25deg);
+        border: 0.6vh solid rgb(97, 4, 97);
+    }
+    20%{
+        background-image: url("https://media.tenor.com/P2z3N1InIlgAAAAM/galaxy.gif");
+        transform: rotate(75deg);
+        border: 0.6vh solid rgb(83, 4, 83);
+    }
+    30%{
+        background-image: url("https://i.pinimg.com/originals/92/ac/36/92ac3696dee29e29e147826267abf6e8.gif");
+        border: 0.6vh solid rgb(68, 3, 68);
+    }
+    40%{
+        background-image: url("https://i.pinimg.com/originals/d2/c2/58/d2c258321507ba683c80747d8888e322.gif");
+        transform: rotate(125deg);
+        border: 0.6vh solid rgb(58, 4, 58);
+    }
+    50%{
+        background-image: url("https://cdn.pixabay.com/animation/2022/11/16/14/56/14-56-49-778_512.gif");
+        transform: rotate(175deg);
+        border: 0.6vh solid rgb(46, 6, 46);
+
+    }
+    60%{
+        background-image: url("https://media.tenor.com/iIgQMUqXbUQAAAAd/gurren-lagann.gif");
+        transform: rotate(185deg);
+        border: 0.6vh solid rgb(39, 4, 39);
+    }
+    70%{
+        background-image: url("https://media.tenor.com/lgUwFn_j0p8AAAAd/galaxy-space.gif");
+        transform: rotate(200deg);
+        border: 0.6vh solid rgb(177, 108, 177);
+    }
+    80%{
+        background-image: url("https://64.media.tumblr.com/b446d52ce83abbc4f9823c21ddb07a55/tumblr_ok9tviEV6r1v1fssvo1_500.gif");
+        transform: rotate(215deg);
+        border: 0.6vh solid rgb(194, 127, 194);
+    }
+    90%{
+        background-image: url("https://i.gifer.com/Td3O.gif");
+        transform: rotate(235deg);
+        border: 0.6vh solid rgb(197, 21, 197);
+    }
+    100%{
+        background-image: url("https://thumbs.gfycat.com/PoisedSlipperyAdeliepenguin-max-1mb.gif");
+        transform: rotate(250deg);
+        border: 0.6vh solid rgb(20, 1, 20);
+    }
+}
