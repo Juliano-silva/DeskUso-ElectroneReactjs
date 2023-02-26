@@ -98,16 +98,18 @@ position: fixed;
   word-wrap: break-word;
 }
 .Sidebar > a{
-    color: rgb(182, 14, 182);
+    color: yellow;
     text-decoration: none;
     display: block;
     font-size: 4vh;
     border: 0.1vh solid transparent;
     text-align: left;
-    transition: 4s;
+    transition: 2s;
+    text-align: center;
 }
 .Sidebar > a:hover{
-    color: yellow;
+    text-shadow: 0.2vh 0.2vh 0.7vh purple;
+    color: purple;
 }
 .Sidebar > button{
     text-align: center;
@@ -764,4 +766,214 @@ position: fixed;
         transform: rotate(250deg);
         border: 0.6vh solid rgb(20, 1, 20);
     }
+}
+/* Email */
+.Form{
+    border: 0.6vh solid rgb(252, 246, 246);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 2vh;
+    background: #11101D;
+    margin-top: 5vh;
+    height: 50vh;
+}
+.Form > div > label{
+    display: block;
+    color: rgb(235, 228, 217);
+    font-size: 4vh;
+    margin-top: 1vh;
+}
+.Form > div > input::placeholder,.Form > div > textarea::placeholder{
+    color: yellow;
+}
+.Form > div > input,.Form > div > textarea{
+    all: unset;
+    display: block;
+    border: 0.3vh solid #28c8dd;
+    width: 65%;
+    border-radius: 2vh;
+    background: #160a81;
+    word-break: break-all;
+    margin: auto;
+    margin-top: 2vh;
+    color: yellow;
+    font-size: 3vh;
+}
+.Form > div > textarea::-webkit-scrollbar{
+    width: 0px;
+}
+.ButtonEmail{
+    all: unset;
+    display: block;
+    width: 20vh;
+    font-size: 2vh;
+    color: whitesmoke;
+    background: #2c7983;
+    border-radius: 2vh;
+    border: 0.2vh solid yellow;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 3vh;
+}
+.ButtonEmail:hover{
+    filter: invert(1);
+}
+/* Register */
+.FormRE{
+    border: 0.2vh solid #252525;
+    margin: auto;
+    width: 80%;
+    margin-top: 5vh;
+    border-radius: 2vh;
+    background: #01131D;
+    text-align: center;
+    height: 30vh;
+}
+.FormRE > input::placeholder{
+    color: rgb(253, 225, 225);
+}
+.FormRE > input{
+    all: unset;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    font-size: 4vh;
+    border-radius: 2vh;
+    background: #74A8E3;
+    border: 0.4vh solid #c0b630;
+    width: 60%;
+    color: rgb(253, 225, 225);
+}
+.FormRE > button{
+    all: unset;
+    display: block;
+    color: whitesmoke;
+    background: #110c3f;
+    width: 25vh;
+    border-radius: 2vh;
+    border: 0.2vh solid snow;
+    margin: auto;
+    margin-top: 3vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+.FormRE > button:hover{
+    filter: invert(1);
+}
+.Login{
+    display: block;
+    border: 0.4vh solid seashell;
+    background: #11101D;
+    height: 80vh;
+    width: 60%;
+    margin: auto;
+    margin-top: 4vh;
+    text-align: center;
+    border-radius: 4vh;
+}
+.Login > img{
+    display: block;
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 50%;
+    border: 0.4vh solid #DCFF03;
+}
+.Login > h1{
+    color: seashell;
+    font-size: 10vh;
+    text-align: center;
+    text-shadow: 0.2vh 0.2vh 2vh yellowgreen;
+    margin-top: 2vh;
+}
+.Login > button{
+    all: unset;
+    color: rgb(12, 10, 10);
+    border: 0.5vh solid rgb(58, 37, 192);
+    text-align: center;
+    margin: auto;
+    margin-top: 5vh;
+    width: 40%;
+    height: 4.5vh;
+    font-size: 4vh;
+    border-radius: 4vh;
+    background: #74A8E3;
+    cursor: pointer;
+}
+.Login > button:hover{
+    filter: invert(1);
+}
+/* QrCode */
+.Qrcode{
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+}
+.QrCodeBody > input{
+    all: unset;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    width: 60%;
+    background: #01131D;
+    height: 5vh;
+    border: 0.2vh solid #2c7983;
+    color: white;
+    border-radius: 0.5vh;
+    text-align: center;
+    font-size: 3vh;
+}
+/* Gerador de Nome e Frase */
+.GeradorNome{
+    display: block;
+    border: 0.4vh solid #b32b73;
+    background: #6e0d41;
+    color: whitesmoke;
+    width: 60%;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: center;
+    border-radius: 2vh;
+}
+.GeradorNome > h1{
+    color: #2113bd;
+    text-shadow: 0.1vh 0.1vh 0.4vh #28c8dd;
+    font-size: 6vh;
+}
+.GeradorNome > h2{
+    display: block;
+    margin-top: 1vh;
+}
+.GeradorNome > h2 > span{
+    font-size: 5vh;
+    color: #DCFF03;
+    text-overflow: 0.2vh 0.2vh 0.2vh black;
+}
+.GeradorNome > button{
+    all: unset;
+    border: 0.5vh solid #1e05ff;
+    border-radius: 2vh;
+    width: 40%;
+    margin: auto;
+    margin-top: 4vh;
+    height: 6vh;
+    font-size: 4vh;
+    cursor: pointer;
+    background: #2c7983;
+    color: #DCFF03;
+}
+.GeradorNome > h4{
+    color: #42cf16;
+    word-break: break-all;
+    border: 0.2vh solid transparent;
+    width: 80%;
+    margin: auto;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+.GeradorNome > button:hover{
+    filter: invert(1);
 }

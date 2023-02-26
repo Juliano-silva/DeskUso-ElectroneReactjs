@@ -5,7 +5,7 @@ function createWindow(){
       height:600,
       hiddenInMissionControl:true,
       autoHideMenuBar:true,
-      title:"DeskUP"
+      title:"DeskUP",
     });
     win.loadURL("https://juliano-silva.github.io/DeskUP/");
 }

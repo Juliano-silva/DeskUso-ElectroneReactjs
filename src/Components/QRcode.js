@@ -1,3 +1,4 @@
+import style from './Style.module.css'
 import { useState } from "react"
 import QRCode from "react-qr-code"
 export default function QRcode(){
@@ -6,10 +7,9 @@ export default function QRcode(){
         setLink(e.target.value)
     }
     return(
-        <div>
-            <h1>QRcode</h1>
-            <QRCode id="QrCode" value={link}/>
-            <input type="text" id="TextQR" onChange={(e) => handleQrcode(e)} value={link}/>
+        <div className={style.QrCodeBody}>
+            <QRCode size="75vh" className={style.Qrcode} id="QrCode" value={link}/>
+            <input type="text" placeholder='QrCode Texto' id="TextQR" onChange={(e) => handleQrcode(e)} value={link}/>
         </div>
         )
 }

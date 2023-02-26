@@ -1,5 +1,6 @@
 import React from "react"
 import emailjs from 'emailjs-com'
+import style from './Style.module.css'
 export default function Email(){
     function EnviarEmail(e){
           e.preventDefault();
@@ -14,7 +15,7 @@ export default function Email(){
     }
     return(
         <div>
-            <form onSubmit={EnviarEmail}>
+            <form onSubmit={EnviarEmail} className={style.Form}>
                 <div>
                     <label>Nome</label>
                     <input type="text" autoFocus required placeholder="Nome" name="name" />
@@ -28,7 +29,7 @@ export default function Email(){
                     <textarea type="text" required placeholder="message" name="message"/>
                 </div>
                 <div>
-                    <input type="submit" value="Enviar Messagem" />
+                <button type="submit" className={style.ButtonEmail}>Enviar Message</button>
                 </div>
             </form>
         </div>
